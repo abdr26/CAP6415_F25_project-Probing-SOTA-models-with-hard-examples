@@ -34,16 +34,6 @@ This work does not claim originality in model architecture or training design; r
 
 ---
 
-## Week 1 Progress
-
- - Environment setup (Python venv)  
- - CIFAR-10 dataset loaders  
- - Baseline model: ResNet-50 feature extractor + kNN classifier  
- - Saved artifacts: confusion matrix, classification report, predictions CSV  
- - `README.md` with project overview and attribution
-
----
-
 ### Run commands
 ```powershell
 
