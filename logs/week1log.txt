@@ -1,0 +1,37 @@
+WEEK 1 LOG – Probing SOTA Models with Hard Examples
+
+1.Research and study: 
+ 
+Looked and reviewed below topics:
+Kaiming He et al., “Deep Residual Learning for Image Recognition” (ResNet, CVPR 2016).
+Dosovitskiy et al., “An Image is Worth 16×16 Words: Transformers for Image Recognition at Scale” (ViT, ICLR 2021).
+Selvaraju et al., “Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization” (ICCV 2017).
+
+Studied the concept of hard examples, how noisy samples affect model confidence and performance.
+
+Understood the role of feature extraction, transfer learning, and model interpretability in probing SOTA models.
+Reviewed the documentation and tutorials for the PyTorch and torchvision frameworks.
+Understood the pytorch-grad-cam library for later visualization tasks.
+
+
+2.Project Setup: 
+
+Created a GitHub Repo "CAP6415_F25_project-Probing-SOTA-models-with-hard-examples"
+Started work in Windows PowerShell
+Checked Python version
+Created and activated Python virtual environment
+Installed dependencies like torchvision, numpy, pandas, matplotlib, scikit-learn, tqdm, pillow
+
+3.Dataset Preparation:
+
+ selected the CIFAR-10 dataset
+ Used PyTorch’s built-in dataset loader with automatic download.
+ 
+4.Model Implementation
+
+Loaded pretrained ResNet-50 from Torchvision.
+Used the model as a feature extractor.
+Extracted 2048-dimensional feature vectors from all CIFAR-10 images.
+Trained a k-Nearest Neighbors (kNN) classifier on extracted features to serve as a non-trainable baseline.
+Evaluated model on CIFAR-10 test set.
+   
