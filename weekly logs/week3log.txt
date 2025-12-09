@@ -1,0 +1,33 @@
+WEEK 3 LOG — Hard Examples & Grad-CAM Visualization
+
+1. Loaded the trained model checkpoint (resnet50_finetuned.pth) from Week 2.
+
+2. Generated the full prediction CSV by running evaluate.py.
+   This produced: test_predictions_finetuned.csv
+
+3. Implemented hard_examples.py to extract:
+    misclassified.csv (406 samples)
+    low_confidence.csv (21 samples with conf < 0.40)
+
+4. Verified both CSV files and ensured the "index" column was included.
+
+5. Wrote and debugged gradcam.py:
+    Loaded the CIFAR-10 test set
+    Loaded the fine-tuned ResNet-50 model
+    Applied Grad-CAM to misclassified samples
+    Generated heatmap images for visual analysis
+
+6. Created output folder gradcam_outputs/ and saved all visualization PNG files.
+
+7. Downloaded all Grad-CAM images to local machine for report inclusion.
+
+8. Performed qualitative analysis of the hardest examples using heatmaps.
+   Observed attention drift, misfocused activations, and ambiguous features.
+
+9. Prepared Week 3 report section summarizing misclassification patterns
+   and Grad-CAM insights.
+
+Overall, Week 3 successfully identified model weaknesses and produced 
+visual explanations using Grad-CAM for inclusion in the final project deliverables.
+
+

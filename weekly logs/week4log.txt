@@ -1,0 +1,36 @@
+WEEK 4 LOG 
+
+1. Loaded all outputs from Week 3, including:
+    misclassified.csv
+    low_confidence.csv
+    Grad-CAM visualizations for both categories.
+
+2. Conducted failure analysis of the model:
+    Identified attention drift issues.
+    Found patterns of confusion between similar classes.
+    Observed diffuse or weak activations in low-confidence samples.
+
+3. Wrote detailed Week 4 analysis summarizing:
+    Misclassification patterns
+    Low-confidence sample behavior
+    Interpretation of Grad-CAM heatmaps
+
+4. Created final conclusion and improvement recommendations based on insights.
+
+5. Prepared content for README.md including:
+    Abstract
+    Model architecture summary
+    Data processing
+    Hard example mining
+    Grad-CAM visualizations
+    Future work
+
+6. Organized final project directory and verified all scripts:
+    train.py
+    evaluate.py
+    hard_examples.py
+    gradcam.py (with both CSVs)
+    All notebooks and outputs
+
+7. Downloaded Grad-CAM outputs locally and selected images for final report.
+

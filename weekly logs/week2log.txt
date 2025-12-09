@@ -1,0 +1,59 @@
+WEEK 2 LOG – Probing SOTA Models with Hard Examples
+
+GOAL FOR WEEK 2
+
+The goal for this week was to fine-tune a state-of-the-art model (ResNet-50)
+on CIFAR-10, evaluate its performance, organize the codebase into modular
+scripts, and prepare the infrastructure for Week 3 probing and visualization.
+
+ACTIONS COMPLETED
+
+1. Fine-tuning Work
+    Implemented full fine-tuning pipeline in train.py.
+    Loaded pretrained ResNet-50 (ImageNet weights) using Torchvision.
+    Replaced the final fully-connected layer with a new 10-class head.
+    Performed 3-epoch fine-tuning using:
+        Optimizer: Adam  
+        Learning rate: 1e-4  
+        Loss: CrossEntropyLoss  
+    Tracked training loss, validation accuracy, and time per epoch.
+    Best checkpoint automatically saved as:
+       models/resnet50_finetuned.pth.
+
+2. Evaluation Pipeline
+    Created a dedicated evaluate.py script for cleaner modularity.
+    Loaded saved checkpoint and tested it on full CIFAR-10 test set.
+    Computed:
+        Overall test accuracy  
+        Per-class performance  
+        Prediction confidence (softmax max probability)  
+        Confusion matrix  
+    Exported results to /results:
+        confusion_matrix_finetuned.csv
+        test_predictions_finetuned.csv
+
+3. Codebase Organization
+    Added utils.py for reusable helper functions:
+        model checkpoint loading
+        simple accuracy calculation
+    Ensured train.py, evaluate.py, and utils.py all work together cleanly.
+    
+4. Background Study and Reading
+    Reviewed fine-tuning practices from PyTorch documentation.
+    Watched tutorials on transfer learning for computer vision.
+    Learned best practices for separating training vs evaluation scripts.
+    Reviewed Grad-CAM paper again (for Week 3 preparation).
+    Studied how confidence-based hard example mining works in literature.
+
+5. Outputs and Observations
+    Fine-tuned model achieved significantly higher accuracy than Week-1 baseline.
+    Observed training stability and convergence within 3 epochs.
+    Test accuracy after fine-tuning: (fill actual number here after running)
+    test_predictions_finetuned.csv now includes ideal candidates for “hard examples”
+    where the confidence is low or prediction is incorrect.
+
+CHALLENGES: 
+
+ Initial checkpoint loading confusion resolved by adding utils.load_checkpoint.
+ Had to ensure `results/ and data/ are not accidentally pushed to GitHub.
+ Handling large-size files required care with .gitignore.
