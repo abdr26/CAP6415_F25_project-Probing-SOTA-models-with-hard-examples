@@ -1,0 +1,44 @@
+Week 5 Log – Project Demo Recording and Finalization
+
+1. Prepared the project environment required for the demo:
+    Verified that all scripts run correctly in sequence:
+        train.py (Colab – T4 GPU)
+        evaluate.py (local or Colab)
+        hard_examples.py
+        gradcam.py
+    Confirmed that output folders (results/, models/, gradcam_outputs/) contain the
+     expected artifacts for demonstration.
+
+2. Re-ran the evaluation pipeline to ensure consistent outputs for the demo:
+    Loaded the fine-tuned ResNet-50 checkpoint.
+    Verified that accuracy, confusion matrix, and predictions CSV match previously saved results.
+    Ensured misclassified.csv (406 samples) and low_confidence.csv (21 samples)
+     remain reproducible.
+
+3. Re-generated a small set of Grad-CAM visualizations:
+    Selected representative examples from misclassified and low-confidence cases.
+    Ensured the images for demo display clearly show attention heatmaps and failure modes.
+
+4. Organized files and directories for a clean final demo:
+    Checked README.md for clear instructions, images, and execution steps.
+    Verified requirements.txt is complete and accurate.
+    Ensured all paths in scripts are correct relative to the repository structure.
+
+5. Scripted the content of the project demo video:
+    Introduction: brief overview of the project goal and methodology.
+    Training explanation: how ResNet-50 was fine-tuned on CIFAR-10 using Colab GPU.
+    Evaluation: how the accuracy and confusion matrix were generated.
+    Hard examples: what misclassified and low-confidence samples represent.
+    Grad-CAM analysis: visual explanation of why certain mistakes happen.
+    Conclusion: key insights learned and recommendations for improving model performance.
+
+6. Recorded the project demonstration video:
+    Showed the repository structure and explained the scripts.
+    Demonstrated running evaluation, extracting hard examples, and generating Grad-CAM outputs.
+    Displayed several Grad-CAM visualizations to highlight failure modes.
+    Concluded with a summary of findings and potential improvements.
+
+7. Saved the final demo video and double-checked audio, pacing, and clarity before submission.
+
+Overall, Week 5 focused on verifying the reproducibility of the full pipeline, organizing results,
+and producing the final video demonstration of the completed project.
