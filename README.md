@@ -233,19 +233,19 @@ Adds stability and improves feature extraction.
 
 clone:
 ```
-$ git clone https://github.com/abdr26/CAP6415_F25_project-Probing-SOTA-models-with-hard-examples
-$ cd CAP6415_F25_project-Probing-SOTA-models-with-hard-examples
+ git clone https://github.com/abdr26/CAP6415_F25_project-Probing-SOTA-models-with-hard-examples
+ cd CAP6415_F25_project-Probing-SOTA-models-with-hard-examples
 ```
 
 Activate venv:
 ```
-$ .\.venv\Scripts\Activate.ps1
+ .\.venv\Scripts\Activate.ps1
 ```
 
 Install dependencies:
 ```
-$ pip install -r requirements.txt
-$ pip install git+https://github.com/jacobgil/pytorch-grad-cam.git
+ pip install -r requirements.txt
+ pip install git+https://github.com/jacobgil/pytorch-grad-cam.git
 ```
 
 # To Run
@@ -257,17 +257,17 @@ $ python scripts/train.py
 
 ### **Evaluate**
 ```
-$ python scripts/evaluate.py
+ python scripts/evaluate.py
 ```
 
 ### **Extract Hard Examples**
 ```
-$ python scripts/hard_examples.py
+ python scripts/hard_examples.py
 ```
 
 ### **Generate Grad-CAM Visualizations**
 ```
-$ python scripts/gradcam.py
+ python scripts/gradcam.py
 ```
 ---
 
@@ -287,22 +287,22 @@ Install dependencies:
 
 ### **Train**
 ```
-$ !python scripts/train.py
+ !python scripts/train.py
 ```
 
 ### **Evaluate**
 ```
-$ !python scripts/evaluate.py
+ !python scripts/evaluate.py
 ```
 
 ### **Extract Hard Examples**
 ```
-$ !python scripts/hard_examples.py
+ !python scripts/hard_examples.py
 ```
 
 ### **Generate Grad-CAM Visualizations**
 ```
-$ !python scripts/gradcam.py
+ !python scripts/gradcam.py
 ```
 
 ---
