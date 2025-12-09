@@ -6,3 +6,6 @@ matplotlib
 scikit-learn
 tqdm
 pillow
+opencv-python
+pytorch-grad-cam
+seaborn
