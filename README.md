@@ -237,6 +237,11 @@ clone:
  cd CAP6415_F25_project-Probing-SOTA-models-with-hard-examples
 ```
 
+Create Venv:
+```
+python -m venv .venv
+```
+
 Activate venv:
 ```
  .\.venv\Scripts\Activate.ps1
