@@ -229,7 +229,7 @@ Adds stability and improves feature extraction.
 └── README.md
 ```
 
-## Installation
+## Installation for Windows Powershell
 
 clone:
 ```
@@ -237,7 +237,7 @@ $ git clone https://github.com/abdr26/CAP6415_F25_project-Probing-SOTA-models-wi
 $ cd CAP6415_F25_project-Probing-SOTA-models-with-hard-examples
 ```
 
-If using windows powershell activate venv:
+Activate venv:
 ```
 $ .\.venv\Scripts\Activate.ps1
 ```
@@ -245,11 +245,45 @@ $ .\.venv\Scripts\Activate.ps1
 Install dependencies:
 ```
 $ pip install -r requirements.txt
+$ pip install git+https://github.com/jacobgil/pytorch-grad-cam.git
 ```
 
+# To Run
+
+### **Train**
+```
+$ python scripts/train.py
+```
+
+### **Evaluate**
+```
+$ python scripts/evaluate.py
+```
+
+### **Extract Hard Examples**
+```
+$ python scripts/hard_examples.py
+```
+
+### **Generate Grad-CAM Visualizations**
+```
+$ python scripts/gradcam.py
+```
 ---
 
 # How to Run the Project in colab
+
+clone:
+```
+!git clone https://github.com/abdr26/CAP6415_F25_project-Probing-SOTA-models-with-hard-examples.git
+%cd CAP6415_F25_project-Probing-SOTA-models-with-hard-examples
+```
+
+Install dependencies:
+```
+!pip install -r requirements.txt
+!pip install git+https://github.com/jacobgil/pytorch-grad-cam.git
+```
 
 ### **Train**
 ```
